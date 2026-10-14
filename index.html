@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Casa Maré · Alojamento Boutique na Nazaré</title>
+  <meta name="description" content="Refúgio boutique na Nazaré: descanso, luz natural e o mar à porta. Reserve a sua estadia.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header" id="header">
+  <a href="#inicio" class="logo">Casa <em>Maré</em></a>
+  <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+  <nav id="nav" class="nav">
+    <a href="#historia">A Nossa História</a>
+    <a href="#suites">Alojamentos</a>
+    <a href="#experiencia">Experiência</a>
+    <a href="#nazare">A Nazaré</a>
+    <a href="#contactos">Contactos</a>
+    <a href="#inicio" class="btn btn-sm">Reservar</a>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg"><img src="images/t2-nazare.jpg" alt="Sala luminosa de alojamento na Nazaré" onerror="this.remove()"></div>
+    <div class="hero-content">
+      <p class="eyebrow">Alojamento Boutique · Nazaré</p>
+      <h1>Onde o mar<br><em>nos ensina a descansar</em></h1>
+      <p class="lead">Um refúgio sereno, feito de luz, areia e silêncio — a poucos passos do Atlântico.</p>
+      <a href="#suites" class="btn">Explorar os Alojamentos</a>
+    </div>
+
+    <!-- MÓDULO DE RESERVAS -->
+    <form class="booking" id="bookingForm" aria-label="Pesquisa de disponibilidade">
+      <div class="field"><label for="checkin">Check-in</label><input type="date" id="checkin" name="checkin" required></div>
+      <div class="field"><label for="checkout">Check-out</label><input type="date" id="checkout" name="checkout" required></div>
+      <div class="field"><label for="guests">Hóspedes</label>
+        <select id="guests" name="guests">
+          <option value="1">1 hóspede</option><option value="2" selected>2 hóspedes</option>
+          <option value="3">3 hóspedes</option><option value="4">4 hóspedes</option>
+        </select>
+      </div>
+      <button type="submit" class="btn">Verificar Disponibilidade</button>
+      <p class="booking-msg" id="bookingMsg" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+
+  <!-- HISTÓRIA -->
+  <section class="section" id="historia">
+    <div class="container story">
+      <div class="reveal">
+        <p class="eyebrow">A Nossa História</p>
+        <h2>Uma casa feita para <em>abrandar</em></h2>
+        <p>A Casa Maré nasceu de um desejo simples: criar um lugar onde o tempo corre mais devagar. Inspirada na serenidade do mar da Nazaré, na luz que entra pelas janelas ao fim da tarde e na tradição costeira que lhe dá alma, cada detalhe foi pensado para que se sinta em casa.</p>
+        <p>Aqui, <em>slow living</em> não é um conceito — é o convite para um pequeno-almoço sem pressa, uma manhã de leitura, um passeio descalço até à praia.</p>
+      </div>
+      <div class="cards reveal">
+        <article class="card"><span class="icon">✦</span><h3>Detalhe</h3><p>Materiais naturais, linho, madeira e cerâmica escolhidos com carinho.</p></article>
+        <article class="card"><span class="icon">✦</span><h3>Serenidade</h3><p>Espaços calmos, luminosos e pensados para o verdadeiro descanso.</p></article>
+        <article class="card"><span class="icon">✦</span><h3>Autenticidade</h3><p>Uma ligação genuína à Nazaré, às suas gentes e ao seu mar.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUÍTES -->
+  <section class="section alt" id="suites">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Os Alojamentos</p>
+        <h2>Suítes com <em>alma costeira</em></h2>
+      </div>
+      <div class="grid">
+        <article class="suite reveal">
+          <div class="photo"><img src="images/insta1.jpg" alt="Quarto com duas camas individuais" loading="lazy" onerror="this.remove()"></div>
+          <div class="suite-body">
+            <h3>Suíte Maré</h3>
+            <p>Cama king, luz dourada ao entardecer e um terraço virado ao mar.</p>
+            <ul class="amenities"><li>Wi-Fi</li><li>Cama King</li><li>Terraço</li><li>Luz natural</li></ul>
+            <a href="#reservas" class="btn btn-outline" data-suite="Suíte Maré">Ver Detalhes</a>
+          </div>
+        </article>
+        <article class="suite reveal">
+          <div class="photo"><img src="images/insta2.jpg" alt="Quarto luminoso com cama e decoração em madeira" loading="lazy" onerror="this.remove()"></div>
+          <div class="suite-body">
+            <h3>Suíte Duna</h3>
+            <p>Tons de areia, texturas suaves e um recanto de leitura junto à janela.</p>
+            <ul class="amenities"><li>Wi-Fi</li><li>Cama King</li><li>Casa de banho privativa</li><li>Luz natural</li></ul>
+            <a href="#reservas" class="btn btn-outline" data-suite="Suíte Duna">Ver Detalhes</a>
+          </div>
+        </article>
+        <article class="suite reveal">
+          <div class="photo"><img src="images/insta3.jpg" alt="Sala e cozinha do alojamento" loading="lazy" onerror="this.remove()"></div>
+          <div class="suite-body">
+            <h3>Suíte Farol</h3>
+            <p>Espaçosa e acolhedora, ideal para estadias mais longas ou em família.</p>
+            <ul class="amenities"><li>Wi-Fi</li><li>2 camas</li><li>Kitchenette</li><li>Terraço</li></ul>
+            <a href="#reservas" class="btn btn-outline" data-suite="Suíte Farol">Ver Detalhes</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIÊNCIA -->
+  <section class="section experience" id="experiencia">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow light">A Experiência &amp; o Bem-Estar</p>
+        <h2>O luxo de <em>não ter pressa</em></h2>
+      </div>
+      <div class="exp-grid">
+        <div class="exp reveal"><h3>Pequeno-almoço local</h3><p>Pão fresco, fruta da época, queijos e doces regionais, servidos com calma.</p></div>
+        <div class="exp reveal"><h3>Descanso profundo</h3><p>Roupa de cama em algodão e linho, silêncio e blackout para noites perfeitas.</p></div>
+        <div class="exp reveal"><h3>Conforto nos detalhes</h3><p>Texturas naturais, aromas suaves e uma atmosfera que convida a respirar.</p></div>
+        <div class="exp reveal"><h3>Luz e atmosfera</h3><p>Espaços luminosos, tons quentes e cantos pensados para ler, escrever ou contemplar.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NAZARÉ -->
+  <section class="section" id="nazare">
+    <div class="container destino">
+      <div class="photo reveal"><img src="images/encosta.png" alt="Casa da Encosta iluminada ao anoitecer junto à piscina" loading="lazy" onerror="this.remove()"></div>
+      <div class="reveal">
+        <p class="eyebrow">A Nazaré</p>
+        <h2>Um destino <em>entre o mar e a memória</em></h2>
+        <p>A Nazaré é tradição e força: a praia imensa, o Sítio com a sua vista soberba, o Farol e as ondas lendárias. Um lugar de pescadores, de sete saias e de sabores do mar.</p>
+        <ul class="list-gold">
+          <li>Praia da Nazaré e passeio marítimo</li>
+          <li>Sítio e Miradouro do Suberco</li>
+          <li>Farol do Forte de São Miguel Arcanjo</li>
+          <li>Gastronomia: peixe fresco, caldeirada e peixe seco</li>
+        </ul>
+        <p>Do alojamento, explora-se tudo a pé ou a curta distância.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVAS -->
+  <section class="section alt center" id="reservas">
+    <div class="container narrow reveal">
+      <p class="eyebrow">Reservas</p>
+      <h2>Reserve a sua <em>estadia</em></h2>
+      <p>Escolha as datas na barra de pesquisa e verifique a disponibilidade.</p>
+      <a href="#inicio" class="btn">Escolher datas</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer" id="contactos">
+  <div class="container foot-grid">
+    <div>
+      <a href="#inicio" class="logo">Casa <em>Maré</em></a>
+      <p>Alojamento boutique na Nazaré.<br>Rua Exemplo, 00 · 2450-000 Nazaré, Portugal</p>
+      <p><a href="tel:+351000000000">+351 000 000 000</a><br><a href="mailto:ola@casamare.pt">ola@casamare.pt</a></p>
+      <p class="social"><a href="#">Instagram</a> · <a href="#">Facebook</a></p>
+    </div>
+    <div>
+      <h3>Newsletter</h3>
+      <p>Novidades e inspiração slow, sem spam.</p>
+      <form id="newsletterForm" class="news">
+        <input type="email" id="newsEmail" placeholder="O seu e-mail" aria-label="E-mail" required>
+        <button class="btn btn-sm" type="submit">Subscrever</button>
+      </form>
+      <p class="booking-msg" id="newsMsg" role="status"></p>
+    </div>
+    <div>
+      <h3>Contacto</h3>
+      <form id="contactForm" class="contact">
+        <input type="text" placeholder="Nome" aria-label="Nome" required>
+        <input type="email" placeholder="E-mail" aria-label="E-mail" required>
+        <textarea rows="3" placeholder="Mensagem" aria-label="Mensagem" required></textarea>
+        <button class="btn btn-sm" type="submit">Enviar</button>
+      </form>
+    </div>
+  </div>
+  <div class="container legal">
+    <span>© <span id="year"></span> Casa Maré. Todos os direitos reservados.</span>
+    <span><a href="#">Privacidade</a> · <a href="#">Termos</a> · <a href="#">Livro de Reclamações</a></span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
